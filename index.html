@@ -1,61 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rockstar Heist Login (Prank)</title>
-<link rel="stylesheet" href="heist.css">
+    <meta charset="UTF-8">
+    <title>Rockstar Secret Heist Console</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: #222;
+            color: #e6e6e6;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 80px auto;
+            background: rgba(44, 62, 80, 0.95);
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #FFC300;
+            font-size: 2em;
+            margin-bottom: 0.3em;
+        }
+        input, button {
+            display: block;
+            width: 90%;
+            margin: 0.7em auto;
+            padding: 0.7em;
+            font-size: 1em;
+            border-radius: 8px;
+            border: none;
+        }
+        button {
+            background: #FFC300;
+            color: #222;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:active {
+            background: #e5ae00;
+        }
+        .disclaimer {
+            margin-top: 30px;
+            color: #bbb;
+            font-size: 0.95em;
+        }
+    </style>
 </head>
 <body>
-  <div class="AppBody__content__CVbMQ">
-    <div id="app-page" class="AppBody__main__ev4fM">
-
-      <!-- Logo -->
-      <div class="Logo__logo__FASmt">
-        <a class="Logo__logoLink__lwfu8" href="https://www.rockstargames.com" aria-label="Rockstar Games link">
-          <img src="https://s.rsg.sc/auth/images/logo_20231030.svg" alt="Rockstar Games Logo">
-        </a>
-      </div>
-
-      <!-- Login Form -->
-      <div class="Container__container__k4t_f" data-ui-name="user-form">
-        <h1 class="Heading__heading__I7Vf8">Sign In to Join the Heist</h1>
-        <div>
-          <form id="heistForm" class="loginform__form__d9S1F" autocomplete="off">
-            <fieldset class="Fieldset__fieldset___9mCP">
-              <span class="UI__TextInput-socialclub__input">
-                <input type="text" id="heistUser" placeholder="Username" class="UI__TextInput-socialclub__field" required>
-                <label for="heistUser"><span>Username</span></label>
-              </span>
-            </fieldset>
-            <fieldset class="Fieldset__fieldset___9mCP">
-              <span class="UI__TextInput-socialclub__input">
-                <input type="password" id="heistPass" placeholder="Password" class="UI__TextInput-socialclub__field" required>
-                <label for="heistPass"><span>Password</span></label>
-              </span>
-            </fieldset>
-            <fieldset class="loginform__submitField__NdeFI">
-              <button type="submit" class="UI__Button-socialclub__btn UI__Button-socialclub__primary UI__Button-socialclub__medium">
-                Sign In
-              </button>
-              <button type="button" id="demoBtn" class="UI__Button-socialclub__btn UI__Button-socialclub__medium">
-                Demo Credentials
-              </button>
-            </fieldset>
-            <div id="loginMsg"></div>
-          </form>
+    <div class="container">
+        <h1>Rockstar Internal - Heist Invite</h1>
+        <form id="heistForm" autocomplete="off">
+            <input type="text" placeholder="Rockstar ID" required>
+            <input type="password" placeholder="Heist Password" required>
+            <button type="submit">Join Secret Heist</button>
+        </form>
+        <div id="message"></div>
+        <div class="disclaimer">
+            <strong>Disclaimer:</strong> This is a parody for entertainment only.<br>
+            Not affiliated with Rockstar Games. No data is collected.
         </div>
-      </div>
-
     </div>
-  </div>
-
-  <!-- Main Heist Page (hidden until login) -->
-  <div id="heistContent" style="display:none; text-align:center; margin-top:50px;">
-    <h1>Welcome to the Secret Heist!</h1>
-    <p>Simulation: You’ve “joined” the heist. Have fun!</p>
-  </div>
-
-<script src="heist.js"></script>
+    <script>
+        document.getElementById('heistForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('message').innerHTML = 
+                "<p>Heist joined! ...Just kidding--this is not real. Enjoy the prank!</p>";
+        });
+    </script>
 </body>
 </html>

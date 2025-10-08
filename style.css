@@ -1,67 +1,34 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  padding-top: 50px;
+    /* Rockstar-like background: dark with a subtle pattern */
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.Logo__logo__FASmt img {
-  width: 180px;
-  margin-bottom: 20px;
+.container {
+    background: rgba(34, 34, 34, 0.95); /* Semi-transparent dark box */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 12px;
+    width: 370px;      /* Set box width */
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #FEDC32; /* Rockstar yellow border */
 }
 
-.Container__container__k4t_f {
-  background: #222;
-  padding: 30px;
-  border-radius: 12px;
-  width: 320px;
-  box-shadow: 0 0 20px #000;
+h1 {
+    color: #FEDC32; /* Rockstar yellow */
+    margin-bottom: 18px;
+    font-family: 'Montserrat', Arial, sans-serif;
 }
-
-.Container__container__k4t_f h1 {
-  font-size: 1.4em;
-  color: #fdd835;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.UI__TextInput-socialclub__input input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 6px;
-  border: 1px solid #444;
-  background: #333;
-  color: #fff;
-}
-
-.UI__Button-socialclub__btn {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.UI__Button-socialclub__primary {
-  background: #fdd835;
-  color: #111;
-}
-
-.UI__Button-socialclub__primary:hover {
-  background: #ffeb3b;
-}
-
-#loginMsg {
-  margin-top: 10px;
-  font-size: 0.9em;
-  color: #f88;
-  text-align: center;
+body {
+    background: 
+        url('https://upload.wikimedia.org/wikipedia/commons/2/2d/Rockstar_Games_Logo.svg') no-repeat center center fixed,
+        linear-gradient(135deg, #232526 0%, #414345 100%);
+    background-size: 220px, cover;
+    opacity: 1;
 }

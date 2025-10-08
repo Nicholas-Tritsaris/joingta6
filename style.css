@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 50px;
+}
+
+.Logo__logo__FASmt img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.Container__container__k4t_f {
+  background: #222;
+  padding: 30px;
+  border-radius: 12px;
+  width: 320px;
+  box-shadow: 0 0 20px #000;
+}
+
+.Container__container__k4t_f h1 {
+  font-size: 1.4em;
+  color: #fdd835;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.UI__TextInput-socialclub__input input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #333;
+  color: #fff;
+}
+
+.UI__Button-socialclub__btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.UI__Button-socialclub__primary {
+  background: #fdd835;
+  color: #111;
+}
+
+.UI__Button-socialclub__primary:hover {
+  background: #ffeb3b;
+}
+
+#loginMsg {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #f88;
+  text-align: center;
+}
